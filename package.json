@@ -1,0 +1,28 @@
+{
+  "name": "posmotri-v-okno-fd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check":"prettier --check \"./**/*.{html,css,js}\"" ,
+    "format":"prettier --write \"./**/*.{html,css,js}\"",
+    "lint":"stylelint '**/*.css'",
+    "lintfix":"stylelint '**/*.css' --fix"
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smirnovalicee/posmotri-v-okno-fd.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/smirnovalicee/posmotri-v-okno-fd/issues"
+  },
+  "homepage": "https://github.com/smirnovalicee/posmotri-v-okno-fd#readme",
+  "dependencies": {
+    "prettier": "^3.9.10",
+    "stylelint": "^18.0.0"
+  }
+}
