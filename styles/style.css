@@ -63,12 +63,14 @@ ol {
 
 .result {
   flex: 1;
+  min-width: 0;
 }
 
 .result__video-container {
   width: 100%;
   height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -81,7 +83,7 @@ ol {
 .search-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: flex-start;
 }
 
@@ -91,6 +93,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
 }
 
 .content__details {
@@ -149,21 +152,29 @@ ol {
   display: block;
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
-/*
 .content__card-link_current {
   background-color: transparent;
 }
 
-.content__card-link::active {
+.content__card-link:active {
   background: #545050;
 }
 
-.content__card-link:hover .content__video-card-title,
-.content__card-link:hover .content__video-card-description-container {
-  text-decoration: underline;
-} */
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
+}
 
 .content__video-card-title {
   white-space: nowrap;
@@ -185,6 +196,7 @@ ol {
   -webkit-line-calm: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  padding-bottom: 2px; /*чтоб подчеркивание норм было на все */
 }
 
 .visually-hidden {
@@ -199,7 +211,7 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 55px;
+  gap: 15px;
 }
 
 .search-form__fieldset {
@@ -211,7 +223,7 @@ ol {
   align-items: center;
   gap: 1.5px;
   width: fit-content;
-  /*cursor:pointer;*/
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -231,6 +243,8 @@ ol {
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
@@ -280,6 +294,8 @@ ol {
   width: 194px;
   height: 34px;
   align-self: flex-end;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .more-button {
@@ -291,10 +307,19 @@ ol {
   background-color: transparent;
 }
 
-.button::active {
+.button:active {
   background: #545050;
 }
 
 .button:focus-visible {
   outline: 1px solid #fff;
+}
+
+.content__card-link:hover .content__video-card-title,
+.content__card-link:hover .content__video-card-description {
+  text-decoration: underline;
+}
+
+.search-form__fieldset:first-child {
+  margin-right: 40px;
 }
