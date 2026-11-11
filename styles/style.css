@@ -137,6 +137,7 @@ ol {
 }
 
 .title {
+  font-family: Oswald, sans-serif;;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -156,7 +157,7 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: transparent;
+  background-color: #545050;
 }
 
 .content__card-link:active {
@@ -177,6 +178,7 @@ ol {
 }
 
 .content__video-card-title {
+    font-family: "Oswald", sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -235,6 +237,7 @@ ol {
   height: 27px;
   color: #fff;
   font-family: inherit;
+  font-size: 18px;
   background-color: transparent;
   appearance: none;
   -webkit-appearence: none;
@@ -283,23 +286,32 @@ ol {
 .button {
   border: 1px solid #fff;
   background-color: transparent;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   color: #fff;
   cursor: pointer;
+  height: 34px;
+flex-shrink: 0;
+
+
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
-  flex-shrink: 0;
   margin-left: auto;
 }
 
 .more-button {
-  width: 100%;
+  padding:0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   width: 100%;
+  
 }
 
 .button:hover {
