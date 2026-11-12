@@ -137,7 +137,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald, sans-serif;;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -178,7 +178,7 @@ ol {
 }
 
 .content__video-card-title {
-    font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -286,16 +286,14 @@ ol {
 .button {
   border: 1px solid #fff;
   background-color: transparent;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   color: #fff;
   cursor: pointer;
   height: 34px;
-flex-shrink: 0;
-
-
+  flex-shrink: 0;
 }
 
 .search-form__submit-button {
@@ -305,13 +303,12 @@ flex-shrink: 0;
 }
 
 .more-button {
-  padding:0;
+  padding: 0;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-   width: 100%;
-  
+  width: 100%;
 }
 
 .button:hover {
